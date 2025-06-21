@@ -1,0 +1,168 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* Light mode background */
+    --foreground: 224 71.4% 4.1%; /* Light mode text */
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 262.1 83.3% 57.8%; /* Vibrant Purple */
+    --primary-foreground: 0 0% 98%;
+    --secondary: 220 14.3% 95.9%; /* Light Gray */
+    --secondary-foreground: 224 71.4% 4.1%;
+    --muted: 220 8.9% 46.1%;
+    --muted-foreground: 220 8.9% 46.1%;
+    --accent: 355.7 75.5% 52.5%; /* Vibrant Pink/Red */
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 262.1 83.3% 57.8%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 224 71.4% 4.1%; /* Dark mode background */
+    --foreground: 0 0% 98%; /* Dark mode text */
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 0 0% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 262.1 83.3% 57.8%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 215 27.9% 16.9%; /* Darker Gray */
+    --secondary-foreground: 0 0% 98%;
+    --muted: 215 20.2% 34.5%;
+    --muted-foreground: 215 20.2% 34.5%;
+    --accent: 355.7 75.5% 52.5%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 262.1 83.3% 57.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  /* Custom scrollbar for a more modern look */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background) / 0.5);
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / 0.7);
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary));
+  }
+}
+
+/* Gradient text utility */
+.gradient-text {
+  @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+}
+
+/* Animated gradient background for Hero */
+.animated-gradient-bg {
+  background: linear-gradient(-45deg, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--secondary)), hsl(var(--primary)/0.7));
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Section titles and subtitles */
+.section-title {
+  @apply text-3xl sm:text-4xl font-extrabold text-center mb-4 gradient-text;
+}
+.section-subtitle {
+  @apply text-lg text-muted-foreground text-center max-w-2xl mx-auto mb-12 lg:mb-16;
+}
+
+/* Glassmorphism card effect */
+.glassmorphism-card {
+  @apply bg-card/70 backdrop-blur-lg border border-border/20 rounded-xl shadow-xl;
+}
+
+/* Skill badge styling */
+.skill-badge {
+  @apply bg-secondary text-secondary-foreground px-4 py-2 rounded-full text-sm font-medium shadow-sm transition-all duration-300;
+}
+
+/* Certificate card styling */
+.certificate-card {
+  @apply bg-card rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-1;
+}
+
+/* Project card styling */
+.project-card {
+  @apply bg-card rounded-xl shadow-lg overflow-hidden transition-all duration-300;
+}
+.project-image {
+  @apply w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105;
+}
+
+/* Contact form input styling */
+.contact-form.input, .contact-form.textarea {
+  @apply w-full px-4 py-3 rounded-md bg-background border border-border focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-shadow;
+}
+.contact-form.textarea {
+  @apply resize-none;
+}
+
+/* Hover lift effect */
+.hover-lift {
+  @apply transition-all duration-300 ease-out hover:shadow-2xl hover:-translate-y-1.5;
+}
+
+/* Detail page item styling */
+.detail-item {
+  @apply flex items-start space-x-4 py-4 border-b border-border/50;
+}
+.detail-item:last-child {
+  @apply border-b-0;
+}
+.detail-icon {
+  @apply w-6 h-6 mt-1 flex-shrink-0;
+}
+.detail-label {
+  @apply block text-sm font-medium text-muted-foreground;
+}
+.detail-value {
+  @apply text-lg text-foreground font-semibold;
+}
+
+html, body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.main-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
