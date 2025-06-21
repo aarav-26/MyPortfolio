@@ -11,7 +11,7 @@ const HeroSection = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/Aarav-cv.pdf';
+    link.href = '/Aarav-CV.pdf';
     link.download = 'Aravind_CV.pdf';
     document.body.appendChild(link);
     link.click();
