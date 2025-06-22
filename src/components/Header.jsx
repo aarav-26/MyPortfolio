@@ -38,14 +38,13 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <motion.div
+            <motion.img
               whileHover={{ scale: 1.08, rotate: 3 }}
               transition={{ type: "spring", stiffness: 300 }}
-              className="text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent drop-shadow-lg"
-              style={{ fontFamily: 'Poppins, sans-serif' }}
-            >
-              AARAV
-            </motion.div>
+              src="/images/name_logo.png"
+              alt="Logo"
+              className="w-60 h-60 object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
