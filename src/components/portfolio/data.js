@@ -191,7 +191,7 @@ export const achievementsData = [
     title: "SNAPCODE (CTF)",
     organization: "Sri Krishna College of Engineering and Technology",
     eventName: "KRIZEN'23",
-    date: "15th September",
+    date: "15th September 2023",
     shortDescription: "Secured 2nd place in a national-level cybersecurity CTF event, excelling in real-time penetration testing and vulnerability exploitation challenges.",
     fullDescription: "Clinched the championship title in the highly competitive 'Capture The Flag (SNAPCODE)' event during KRIZEN'23, organized by the Department of Mechatronics at Sri Krishna College of Engineering and Technology. The competition featured a series of cybersecurity challenges covering domains such as web application exploitation, reverse engineering, cryptography, steganography, and network vulnerability analysis. Demonstrating exceptional analytical and offensive security skills, the participant successfully identified vulnerabilities, captured all security flags, and resolved complex security puzzles ahead of all other participants. The performance highlighted proficiency in ethical hacking, incident response, and secure coding principles under high-pressure, time-bound conditions.",
     icon: "Zap",
