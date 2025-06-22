@@ -41,7 +41,7 @@ const CertificationsSection = ({ certifications }) => {
       viewport={{ once: true, amount: 0.2 }}
     >
       {/* Heading */}
-      <div className="flex justify-center items-center mb-6 md:mb-[3%]">
+      <div className="flex justify-center items-center mt-[7%] mb-6 md:mb-[3%]">
         <h2 className="section-title text-center text-3xl md:text-4xl font-bold">
           Credentials & Certifications
         </h2>
