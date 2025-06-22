@@ -32,7 +32,7 @@ export const education = [
     icon: React.createElement(BookOpen, { size: 28 }),
   },
   {
-    level: 'B.Tech CSE',
+    level: 'B.E CSE CYBERSECURITY',
     institution: 'Sri Krishna College of Technology',
     percentage: '87',
     year: '2026',
