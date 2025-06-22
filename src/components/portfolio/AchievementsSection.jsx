@@ -54,7 +54,7 @@ const AchievementsSection = ({ achievements }) => {
                 <p className="text-sm text-muted-foreground mb-3">
                   <span className="font-medium text-foreground/90">Date:</span> {achievement.date}
                 </p>
-                <p className="text-foreground/80 text-sm mb-4 line-clamp-3">{achievement.shortDescription || achievement.description}</p>
+                <p className="text-foreground/80 text-justify text-sm mb-4 line-clamp-3">{achievement.shortDescription || achievement.description}</p>
               </div>
               <Button asChild variant="outline" className="text-primary border-primary hover:bg-primary/10 w-full mt-auto">
                 <Link to={`/achievement/${achievement.id}`}>
