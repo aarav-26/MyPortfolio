@@ -60,41 +60,70 @@ export const experiencesData = [
 
 export const certificationsData = [
   {
-    id: "ceh",
-    name: "Certified Ethical Hacker (CEH)",
-    issuer: "EC-Council",
-    date: "Mar 2021",
-    score: "92%",
-    validity: "3 Years",
-    imageAlt: "Official CEH certificate badge",
+    id: "01",
+    name: "Ethical Hacking",
+    issuer: "NPTEL",
+    date: "July - October 2024",
+    score: "55%",
+    imageAlt: "Official NPTEL Certificate",
     description: "A comprehensive certification in ethical hacking and network security. Covers penetration testing, vulnerability assessment, and countermeasures.",
-    verifyLink: "https://aspen.eccouncil.org/Verify",
-    certificateImageUrl: "https://images.unsplash.com/photo-1568137225414-ca932d7b8ef6"
+    verifyLink: "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL24CS94S25240084803840081",
+    certificateImageUrl: "/images/Certificates/NPTEL/Ethical_Hacking.png"
   },
   {
-    id: "aws-csaa",
-    name: "AWS Certified Solutions Architect - Associate",
-    issuer: "Amazon Web Services",
-    date: "Aug 2020",
-    score: "850/1000",
-    validity: "3 Years",
-    imageAlt: "Official AWS CSAA certificate badge",
-    description: "Validates ability to design and deploy well-architected solutions on AWS. Focuses on cost and performance optimized solutions.",
-    verifyLink: "https://aws.amazon.com/certification/verification/",
-    certificateImageUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe"
+    id: "02",
+    name: "Introduction to Internet of Things",
+    issuer: "NPTEL",
+    date: "Jan - Apr 2024",
+    score: "87%",
+    imageAlt: "Official NPTEL Certificate",
+    description: "An introductory certification covering the fundamentals of Internet of Things (IoT) systems and applications. The course explores the architecture, communication protocols, sensors, microcontrollers, cloud integration, and security challenges associated with IoT devices. It also includes practical use cases across smart cities, healthcare, agriculture, and industrial automation.",
+    verifyLink: "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL24CS35S65380552730346596",
+    certificateImageUrl: "/images/Certificates/NPTEL/IOT.png"
   },
   {
-    id: "security-plus",
-    name: "CompTIA Security+",
-    issuer: "CompTIA",
-    date: "Feb 2020",
+    id: "03",
+    name: "IBM Cybersecurity Analyst",
+    issuer: "IBM",
+    date: "Feb 2023",
     score: "Passed",
-    validity: "3 Years",
-    imageAlt: "Official CompTIA Security+ certificate badge",
+    imageAlt: "Official Cybersecurity Analyst",
     description: "A global certification that validates the baseline skills necessary to perform core security functions and pursue an IT security career.",
-    verifyLink: "https://www.certmetrics.com/comptia/public/verification.aspx",
-    certificateImageUrl: "https://images.unsplash.com/photo-1550645612-83f5d594b671"
+    verifyLink: "https://www.coursera.org/account/accomplishments/specialization/TLEV48X4R3U3",
+    certificateImageUrl: "/images/Certificates/Coursera/IBM_CS_Analyst.png"
   },
+  {
+  id: "04",
+  name: "AWS Cloud Technical Essentials",
+  issuer: "AWS",
+  date: "Jan 2024",
+  score: "94.96",
+  imageAlt: "Cloud Technical Essentials",
+  description: "An introductory certification that provides foundational knowledge of AWS cloud concepts, core services, security, pricing, and support models. The course covers essential AWS services such as EC2, S3, RDS, and VPC, along with practical guidance on how to build and manage cloud-based solutions securely and efficiently.",
+  verifyLink: "https://www.coursera.org/account/accomplishments/verify/7JS29X7TW2T2",
+  certificateImageUrl: "/images/Certificates/Coursera/AWS_CTE.png"
+},
+{
+  id: "05",
+  name: "AWS Fundamentals",
+  issuer: "AWS",
+  date: "Aug 2023",
+  imageAlt: "AWS Fundamentals",
+  description: "A foundational certification that introduces learners to the core concepts, services, and infrastructure of Amazon Web Services (AWS). The course covers essential topics such as cloud computing models, AWS global infrastructure, compute, storage, networking services, and best practices for designing scalable, reliable, and secure cloud-based solutions.",
+  verifyLink: "https://www.coursera.org/account/accomplishments/specialization/ST84TPYJ528J",
+  certificateImageUrl: "/images/Certificates/Coursera/AWS_F.png"
+},
+{
+  id: "06",
+  name: "Cyber Security and Privacy",
+  issuer: "NPTEL",
+  date: "July - October 2023",
+  score: "55%",
+  imageAlt: "Official NPTEL Cyber Security Certificate",
+  description: "A comprehensive certification course covering the principles, practices, and technologies used to secure digital systems and protect privacy. The course explores cryptography, access control, network security, web security, malware analysis, and privacy-enhancing technologies, preparing learners to identify and mitigate cyber threats effectively.",
+  verifyLink: "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL23CS127S63380480920050463",
+  certificateImageUrl: "/images/Certificates/NPTEL/CS_Privacy&Security.png"
+},
 ];
 
 export const projectsData = [
@@ -108,7 +137,7 @@ export const projectsData = [
   },
   {
     title: "Secure E-commerce Platform",
-    description: "Developed a full-stack e-commerce website with a focus on security best practices, including secure payment integration and data encryption.",
+    description: "Developed a full-shttpstack e-commerce website with a focus on security best practices, including secure payment integration and data encryption.",
     image: "Homepage of Secure E-commerce Platform",
     tags: ["React", "Node.js", "Stripe", "Security"],
     liveLink: "#",
