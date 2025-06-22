@@ -4,7 +4,7 @@ import { useParams, Link as RouterLink } from 'react-router-dom';
 import { certificationsData } from '@/components/portfolio/data';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, ExternalLink, CalendarDays, CheckCircle, Award, Building } from 'lucide-react';
+import { Maximize2, ArrowLeft, ExternalLink, CalendarDays, CheckCircle, Award, Building } from 'lucide-react';
 
 const CertificateDetailPage = () => {
   const { id } = useParams();
@@ -37,7 +37,7 @@ const CertificateDetailPage = () => {
       }
     })
   };
-  
+
   const imageVariants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.5, ease: "easeOut", delay: 0.2 } }
@@ -46,7 +46,7 @@ const CertificateDetailPage = () => {
   return (
     <div className="py-16 lg:py-24 bg-gradient-to-br from-background to-secondary/30">
       <div className="container mx-auto px-4">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -63,14 +63,14 @@ const CertificateDetailPage = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
-          <motion.div 
+          <motion.div
             className="lg:col-span-2 glassmorphism-card p-8 md:p-10"
             initial="hidden"
             animate="visible"
-            variants={{ visible: { transition: { staggerChildren: 0.1 }}}}
+            variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
           >
             <motion.h2 variants={detailItemVariants} custom={0} className="text-2xl font-semibold text-foreground mb-6">Certificate Details</motion.h2>
-            
+
             <motion.div variants={detailItemVariants} custom={1} className="detail-item">
               <Building className="detail-icon text-sky-500" />
               <div>
@@ -106,7 +106,7 @@ const CertificateDetailPage = () => {
                 </div>
               </motion.div>
             )}
-            
+
             <motion.div variants={detailItemVariants} custom={5} className="mt-6">
               <h3 className="text-lg font-semibold text-foreground mb-2">Description</h3>
               <p className="text-foreground/80 leading-relaxed">{certificate.description}</p>
@@ -123,18 +123,26 @@ const CertificateDetailPage = () => {
             )}
           </motion.div>
 
-          <motion.div 
+          <motion.div
             className="lg:col-span-1"
             variants={imageVariants}
             initial="hidden"
             animate="visible"
           >
             <div className="sticky top-24">
-              <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-2xl border-4 border-primary/20 hover-lift">
-                <img  
-                  alt={certificate.imageAlt || `Image of ${certificate.name}`} 
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-2xl border-4 border-primary/20 hover-lift">
+                <img
+                  alt={certificate.imageAlt || `Image of ${certificate.name}`}
                   className="w-full h-full object-cover"
-                 src="https://images.unsplash.com/photo-1568137225414-ca932d7b8ef6" />
+                  src={certificate.certificateImageUrl}
+                />
+                <button
+                  onClick={() => window.open(certificate.certificateImageUrl, '_blank')}
+                  className="absolute top-3 right-3 bg-background/80 backdrop-blur-sm rounded-full p-2 hover:bg-background shadow transition"
+                  title="View Fullscreen"
+                >
+                  <Maximize2 className="w-5 h-5 text-foreground" />
+                </button>
               </div>
               <p className="text-center text-sm text-muted-foreground mt-4">
                 Visual representation of the certificate.
