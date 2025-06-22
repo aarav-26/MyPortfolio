@@ -43,7 +43,7 @@ const Header = () => {
               transition={{ type: "spring", stiffness: 300 }}
               src="/images/name_logo.png"
               alt="Logo"
-              className="w-60 h-60 object-contain"
+              className="w-48 h-48 object-contain"
             />
           </Link>
 
