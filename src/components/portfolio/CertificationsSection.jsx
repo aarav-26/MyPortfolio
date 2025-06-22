@@ -34,31 +34,33 @@ const CertificationsSection = ({ certifications }) => {
   return (
     <motion.section
       id="certifications"
-      className="w-[90%] h-[100vh] mx-auto flex flex-col justify-between bg-background"
+      className="w-[95%] md:w-[90%] h-auto md:h-[90vh] mx-auto flex flex-col justify-between bg-background py-8"
       variants={sectionVariants}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
     >
       {/* Heading */}
-<div className="flex justify-center items-center h-[20%] mt-[5%] mb-[3%]">
-  <h2 className="section-title text-center text-4xl font-bold">Credentials & Certifications</h2>
-</div>
+      <div className="flex justify-center items-center mb-6 md:mb-[3%]">
+        <h2 className="section-title text-center text-3xl md:text-4xl font-bold">
+          Credentials & Certifications
+        </h2>
+      </div>
 
       {/* Cards */}
-      <div className="h-[60%] flex items-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 w-full">
+      <div className="flex-1 flex items-center md:h-[60%]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
           <AnimatePresence>
             {visibleCertifications.map((cert, index) => (
               <motion.div
                 key={cert.id}
-                className="group rounded-xl bg-card shadow-xl overflow-hidden transition-transform duration-300 hover:scale-105 h-full flex flex-col"
+                className="group rounded-xl bg-card shadow-xl overflow-hidden transition-transform duration-300 hover:scale-105 flex flex-col"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 50 }}
                 transition={{ duration: 0.5, delay: index * 0.05 }}
               >
-                <div className="relative h-[60%] overflow-hidden">
+                <div className="relative h-48 md:h-[60%] overflow-hidden">
                   <img
                     alt={cert.name + ' certificate image'}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
@@ -66,12 +68,12 @@ const CertificationsSection = ({ certifications }) => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 text-primary-foreground">
-                    <Award className="w-8 h-8 mb-2 text-accent" />
-                    <h3 className="text-lg font-semibold">{cert.name}</h3>
+                    <Award className="w-7 h-7 mb-2 text-accent" />
+                    <h3 className="text-base md:text-lg font-semibold">{cert.name}</h3>
                   </div>
                 </div>
 
-                <div className="p-4 space-y-2 h-[40%] flex flex-col justify-between">
+                <div className="p-4 space-y-2 flex flex-col justify-between flex-1">
                   <div>
                     <p className="text-sm text-muted-foreground">
                       Issued by: <span className="font-medium text-foreground">{cert.issuer}</span>
@@ -97,7 +99,7 @@ const CertificationsSection = ({ certifications }) => {
       </div>
 
       {/* Navigation Buttons */}
-      <div className="flex justify-center items-center gap-6 mt-[5%] mb-[2%] h-[10%]">
+      <div className="flex justify-center items-center gap-6 mt-6 md:mt-[5%] mb-4 md:mb-[2%] flex-wrap">
         <Button
           onClick={handlePrev}
           disabled={startIndex === 0}
