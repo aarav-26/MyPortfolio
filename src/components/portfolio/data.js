@@ -67,7 +67,6 @@ export const certificationsData = [
   "score": "Passed",
   "imageAlt": "Official Oracle MySQL Developer Certificate",
   "description": "Professional certification awarded by Oracle to Aravind A for demonstrating expertise in MySQL 8.0 development, including advanced SQL programming, stored routines, transactions, data modeling, and performance optimization.",
-  "verifyLink": "https://catalog-education.oracle.com/pls/certview/sharebadge?id=102041464MYSQLPRG80OCP",
   "certificateImageUrl": "/images/Certificates/Oracle/MySQL_Developer_Certificate.png"
   },
   {
