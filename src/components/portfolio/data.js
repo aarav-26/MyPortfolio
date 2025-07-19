@@ -140,7 +140,7 @@ export const projectsData = [
   {
   title: "Apartment Management",
   description: "ApartmentCare is a full-stack apartment management platform designed to streamline resident services, complaint handling, visitor logs, and contact inquiries. Built using React.js, Express.js, and MySQL, it enables real-time tracking of service requests, encrypted document storage, resident authentication, and admin dashboards — making society management seamless and efficient.",
-  image: "/images/Projects/Apartment_2.jpeg",
+  image: "/images/Projects/Apartment_1.jpeg",
   imageAlt:"Apartment Management",
   tags: ["React.js", "Express.js", "MySQL"],
   liveLink: "#",
@@ -149,8 +149,8 @@ export const projectsData = [
   {
     title: "Secure E-commerce Platform",
     description: "Developed a full-shttpstack e-commerce website with a focus on security best practices, including secure payment integration and data encryption.",
-    image: "/images/Projects/Apartment_1.jpeg",
-    imageAlt:"Apartment Management",
+    image: "/images/Projects/Apartment_2.jpeg",
+    imageAlt:"Apartment Management1",
     tags: ["React", "Node.js", "Stripe", "Security"],
     liveLink: "#",
     repoLink: "#"
@@ -158,8 +158,8 @@ export const projectsData = [
   {
     title: "Cloud Infrastructure Automation",
     description: "Automated deployment and management of cloud resources on AWS using Terraform and Ansible.",
-    image: "/images/Projects/Apartment_2.jpeg",
-    imageAlt:"Apartment Management",
+    image: "/images/Projects/Apartment_1.jpeg",
+    imageAlt:"Apartment Management2",
     tags: ["AWS", "Terraform", "Ansible", "DevOps"],
     liveLink: "#",
     repoLink: "#"
