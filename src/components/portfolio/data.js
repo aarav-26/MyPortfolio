@@ -144,7 +144,7 @@ export const projectsData = [
   imageAlt:"Apartment Management",
   tags: ["React.js", "Express.js", "MySQL"],
   liveLink: "#",
-  repoLink: "#"
+  repoLink: "https://github.com/aarav-26/Project_Apartment"
   },
   {
     title: "Secure E-commerce Platform",
