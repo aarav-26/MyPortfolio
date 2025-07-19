@@ -31,7 +31,7 @@ const ProjectsSection = ({ projects }) => {
               whileHover={{ y: -5, boxShadow: "0 15px 30px rgba(0,0,0,0.15)" }}
             >
               <div className="relative">
-                <img  alt={project.image} className="project-image" src="https://images.unsplash.com/photo-1571677246347-5040036b95cc" />
+                <img  alt={project.imageAlt} className="project-image" src={project.image} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
                     <div className="flex space-x-2 mb-2">
                     <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="p-2 bg-primary/80 hover:bg-primary text-primary-foreground rounded-full transition-colors" aria-label="View Live Project"><Eye size={18}/></a>
