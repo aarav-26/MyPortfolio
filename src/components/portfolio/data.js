@@ -138,10 +138,10 @@ export const certificationsData = [
 
 export const projectsData = [
   {
-    title: "AI-Powered Threat Detection System",
+    title: "Apartment Management",
     description: "A machine learning model to identify and classify cyber threats in real-time. Built with Python, Scikit-learn, and TensorFlow.",
-    image: "Dashboard of AI Threat Detection System",
-    tags: ["Python", "Machine Learning", "Cybersecurity"],
+    image: "/images/Projects/Apartment_1.jpeg",
+    tags: ["React.js", "Express.js", "MySQL"],
     liveLink: "#",
     repoLink: "#"
   },
