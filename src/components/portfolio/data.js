@@ -60,14 +60,14 @@ export const experiencesData = [
 
 export const certificationsData = [
   {
-  "id": "01",
-  "name": "MySQL 8.0 Database Developer - Oracle Certified Professional",
-  "issuer": "Oracle",
-  "date": "July 16, 2025",
-  "score": "Passed",
-  "imageAlt": "Official Oracle MySQL Developer Certificate",
-  "description": "Professional certification awarded by Oracle to Aravind A for demonstrating expertise in MySQL 8.0 development, including advanced SQL programming, stored routines, transactions, data modeling, and performance optimization.",
-  "certificateImageUrl": "/images/Certificates/Oracle/MySQL_Developer_Certificate.png"
+  id: "01",
+  name: "MySQL 8.0 Database Developer - Oracle Certified Professional",
+  issuer: "Oracle",
+  date: "July 16, 2025",
+  score: "Passed",
+  imageAlt: "Official Oracle MySQL Developer Certificate",
+  description: "Professional certification awarded by Oracle to Aravind A for demonstrating expertise in MySQL 8.0 development, including advanced SQL programming, stored routines, transactions, data modeling, and performance optimization.",
+  certificateImageUrl: "/images/Certificates/Oracle/MySQL_Developer_Certificate.png"
   },
   {
     id: "02",
@@ -82,17 +82,6 @@ export const certificationsData = [
   },
   {
     id: "03",
-    name: "Introduction to Internet of Things",
-    issuer: "NPTEL",
-    date: "Jan - Apr 2024",
-    score: "87%",
-    imageAlt: "Official NPTEL Certificate",
-    description: "An introductory certification covering the fundamentals of Internet of Things (IoT) systems and applications. The course explores the architecture, communication protocols, sensors, microcontrollers, cloud integration, and security challenges associated with IoT devices. It also includes practical use cases across smart cities, healthcare, agriculture, and industrial automation.",
-    verifyLink: "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL24CS35S65380552730346596",
-    certificateImageUrl: "/images/Certificates/NPTEL/IOT.png"
-  },
-  {
-    id: "04",
     name: "IBM Cybersecurity Analyst",
     issuer: "IBM",
     date: "Feb 2023",
@@ -103,7 +92,28 @@ export const certificationsData = [
     certificateImageUrl: "/images/Certificates/Coursera/IBM_CS_Analyst.png"
   },
   {
-  id: "05",
+    id: "04",
+    name: "Introduction to Internet of Things",
+    issuer: "NPTEL",
+    date: "Jan - Apr 2024",
+    score: "87%",
+    imageAlt: "Official NPTEL Certificate",
+    description: "An introductory certification covering the fundamentals of Internet of Things (IoT) systems and applications. The course explores the architecture, communication protocols, sensors, microcontrollers, cloud integration, and security challenges associated with IoT devices. It also includes practical use cases across smart cities, healthcare, agriculture, and industrial automation.",
+    verifyLink: "https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL24CS35S65380552730346596",
+    certificateImageUrl: "/images/Certificates/NPTEL/IOT.png"
+  },
+  {
+    id: "05",
+    name:  "MySQL 8.0 Database Administrator - Oracle Certified Professional",
+    issuer:  "Oracle",
+    date:  "July 29, 2025",
+    score:  "Passed",
+    imageAlt:  "Official Oracle MySQL Administrator Certificate",
+    description:  "Professional certification awarded by Oracle to Aravind A for demonstrating advanced expertise in administering MySQL 8.0 databases, covering server architecture, security, replication, backup and recovery, performance tuning, and high availability strategies.",
+    certificateImageUrl:  "/images/Certificates/Oracle/MySQL_Administrator_Certificate.png"
+  },
+  {
+  id: "06",
   name: "AWS Cloud Technical Essentials",
   issuer: "AWS",
   date: "Jan 2024",
@@ -114,7 +124,7 @@ export const certificationsData = [
   certificateImageUrl: "/images/Certificates/Coursera/AWS_CTE.png"
 },
 {
-  id: "06",
+  id: "07",
   name: "AWS Fundamentals",
   issuer: "AWS",
   date: "Aug 2023",
@@ -124,7 +134,7 @@ export const certificationsData = [
   certificateImageUrl: "/images/Certificates/Coursera/AWS_F.png"
 },
 {
-  id: "07",
+  id: "08",
   name: "Cyber Security and Privacy",
   issuer: "NPTEL",
   date: "July - October 2023",
