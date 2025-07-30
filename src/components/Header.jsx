@@ -20,11 +20,15 @@ const Header = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/dummy-cv.pdf';
-    link.download = 'Aravind_developer.pdf';
+    link.href = '/Aarav_CV.pdf';
+    link.download = 'Aravind_CV.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    toast({
+      title: 'CV Downloaded',
+      description: 'Aravind_CV.pdf has been downloaded.',
+    });
   };
 
   return (
