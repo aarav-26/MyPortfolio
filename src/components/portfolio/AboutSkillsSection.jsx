@@ -2,11 +2,15 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { GraduationCap, BookOpen, School } from 'lucide-react';
 
-const AboutSkillsSection = ({ skills,education }) => {
-  
+const AboutSkillsSection = ({ skills, education }) => {
+  // Motion variants for section animation
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+    visible: { 
+      opacity: 1, 
+      y: 0, 
+      transition: { duration: 0.6, ease: 'easeOut' } 
+    },
   };
 
   return (
@@ -19,8 +23,13 @@ const AboutSkillsSection = ({ skills,education }) => {
       viewport={{ once: true, amount: 0.2 }}
     >
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-8">About Me & Skills</h2>
 
+        {/* Section Title */}
+        <h2 className="text-4xl font-bold text-center mb-8">
+          About Me & Skills
+        </h2>
+
+        {/* About Me Description */}
         <p className="text-lg text-gray-600 max-w-3xl mx-auto text-center mb-12">
           I'm a dedicated Software Developer with a strong focus on Cybersecurity.
           I thrive on solving complex problems and building secure, scalable applications.
@@ -44,20 +53,22 @@ const AboutSkillsSection = ({ skills,education }) => {
               </motion.div>
             ))}
           </div>
-
-          
         </div>
-<div className="my-16 flex justify-center">
-  <iframe
-    src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2609953"
-    className="w-full max-w-md h-80 md:h-96 border-none"
-    title="TryHackMe Badge"
-  ></iframe>
-</div>
+
+        {/* TryHackMe Badge */}
+        <div className="my-16 flex justify-center">
+          <iframe
+            src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2609953"
+            className="w-full max-w-md h-80 md:h-96 border-none"
+            title="TryHackMe Badge"
+          ></iframe>
+        </div>
 
         {/* Education */}
         <div className="max-w-5xl mx-auto">
-          <h3 className="text-2xl font-semibold text-center mb-6">Academic Achievements 📚</h3>
+          <h3 className="text-2xl font-semibold text-center mb-6">
+            Academic Achievements 📚
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {education.map((edu, index) => (
               <motion.div
@@ -78,6 +89,7 @@ const AboutSkillsSection = ({ skills,education }) => {
             ))}
           </div>
         </div>
+
       </div>
     </motion.section>
   );
