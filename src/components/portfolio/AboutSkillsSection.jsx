@@ -45,14 +45,14 @@ const AboutSkillsSection = ({ skills,education }) => {
             ))}
           </div>
 
-          <div className="text-center mb-12">
+          
+        </div>
+<div className="text-center mb-12">
     <iframe
       src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2609953"
       title="TryHackMe Badge"
     ></iframe>
   </div>
-        </div>
-
         {/* Education */}
         <div className="max-w-5xl mx-auto">
           <h3 className="text-2xl font-semibold text-center mb-6">Academic Achievements 📚</h3>
