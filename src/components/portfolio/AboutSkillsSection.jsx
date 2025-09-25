@@ -35,6 +35,8 @@ const AboutSkillsSection = ({ skills, education }) => {
           I thrive on solving complex problems and building secure, scalable applications.
           My expertise spans full-stack development, cloud technologies, and advanced security practices.
         </p>
+        <br></br>
+        <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2609953" style='border:none;'></iframe>
 
         {/* Skills */}
         <div className="max-w-4xl mx-auto text-center mb-16">
