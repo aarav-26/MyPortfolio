@@ -36,7 +36,11 @@ const AboutSkillsSection = ({ skills, education }) => {
           My expertise spans full-stack development, cloud technologies, and advanced security practices.
         </p>
         <br></br>
-        <iframe src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2609953" style='border:none;'></iframe>
+          <iframe
+    src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2609953"
+    className="w-full max-w-md h-80 md:h-96 border-none"
+    title="TryHackMe Badge"
+  ></iframe>
 
         {/* Skills */}
         <div className="max-w-4xl mx-auto text-center mb-16">
