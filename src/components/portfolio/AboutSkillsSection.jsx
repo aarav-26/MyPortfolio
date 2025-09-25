@@ -38,7 +38,7 @@ const AboutSkillsSection = ({ skills, education }) => {
         <br></br>
           <iframe
     src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2609953"
-            className="text-cente"
+            className="text-center"
     title="TryHackMe Badge"
   ></iframe>
 
