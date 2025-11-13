@@ -52,7 +52,7 @@ export const experiencesData = [
     title: "SOC Monitoring Engineer",
     company: "Zoho Corp.",
     duration: "Oct 2025 - present",
-    description: "Monitored network traffic for suspicious activities.",
+    description: "Proactively monitor real-time network traffic and SIEM logs to detect anomalies, ensuring rapid incident response and threat mitigation. Analyze security alerts to identify potential intrusions, maintaining 24/7 surveillance of critical infrastructure and data integrity.",
     logo: "https://lirp.cdn-website.com/923c28f8/dms3rep/multi/opt/zoho+logo+%281%29-640w.png"
   },
   
