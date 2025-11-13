@@ -49,11 +49,11 @@ export const experiencesData = [
     "logo": "images/aes_logo.jpeg"
   },  
   {
-    title: "Cybersecurity Analyst",
-    company: "SecureNet Corp.",
-    duration: "Jun 2020 - Dec 2021",
-    description: "Performed penetration testing, security audits, and incident response. Developed and implemented security policies and procedures. Monitored network traffic for suspicious activities.",
-    logo: "images/aes_logo.png"
+    title: "SOC Monitoring Engineer",
+    company: "Zoho Corp.",
+    duration: "Oct 2025 - present",
+    description: "Monitored network traffic for suspicious activities.",
+    logo: "https://lirp.cdn-website.com/923c28f8/dms3rep/multi/opt/zoho+logo+%281%29-640w.png"
   },
   
 ];
